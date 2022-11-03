@@ -6,7 +6,7 @@ import Buttonc from "../components/Buttonc";
 
 export const Main = ({ navigation }) => {
   return (
-    <Center mt={"32"}>
+    <Center mt={"20"}>
       <Image size="2xl" resizeMode="cover" source={gambar} alt={"Login.png"} />
 
       <Text style={{ marginTop: 40 }}>
