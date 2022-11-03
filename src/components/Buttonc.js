@@ -3,9 +3,12 @@ import { Text, Button } from "native-base";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 
-const Buttonc = ({ name, color }) => {
+const Buttonc = ({ name, color, ...free }) => {
   return (
-    <TouchableOpacity style={color === "red" ? styles.red : styles.blue}>
+    <TouchableOpacity
+      style={color === "red" ? styles.red : styles.blue}
+      {...free}
+    >
       <Text>{name}</Text>
     </TouchableOpacity>
   );
