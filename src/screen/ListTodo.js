@@ -16,7 +16,7 @@ import Inputc from "../components/Inputc";
 
 const ListTodo = () => {
   return (
-    <ScrollView w="full" mt="10" padding="5">
+    <ScrollView w="full" mt="5" padding="5">
       <Center>
         <HStack marginBottom={10}>
           <Box>

@@ -8,13 +8,16 @@ import ListTodo from "./src/screen/ListTodo";
 import AddCategory from "./src/screen/AddCategory";
 import Addlist from "./src/screen/Addlist";
 import Container from "./Container";
+import { UserContextProvider } from "./context/UserContext";
 
 // extend the theme
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Container />
+      <UserContextProvider>
+        <Container />
+      </UserContextProvider>
     </NativeBaseProvider>
   );
 }
